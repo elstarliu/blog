@@ -1,0 +1,667 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>百度链接提交主动推送后不收录的原因 | 嘟嘟独立博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Teng Jun">
+    
+
+    
+    <meta name="description" content="前言 （转载）自从百度站长平台开放了百度链接主动推送接口以后，很多站长都开始使用百度开放的这个主动推送接口来推送网站的最新内容，但是在使用这个推送接口的时候，大家肯定也发现了不少问题，比如推送的内容不收录、推送的链接数量 和 站长平台显示的主动提交数量不符等等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="百度链接提交主动推送后不收录的原因">
+<meta property="og:url" content="http://tengj.github.io/2016/03/14/baidunoshouluresson/index.html">
+<meta property="og:site_name" content="嘟嘟独立博客">
+<meta property="og:description" content="前言 （转载）自从百度站长平台开放了百度链接主动推送接口以后，很多站长都开始使用百度开放的这个主动推送接口来推送网站的最新内容，但是在使用这个推送接口的时候，大家肯定也发现了不少问题，比如推送的内容不收录、推送的链接数量 和 站长平台显示的主动提交数量不符等等">
+<meta property="og:image" content="http://7xqch5.com1.z0.glb.clouddn.com/javaLearn.PNG">
+<meta property="og:updated_time" content="2016-03-27T09:23:44.251Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="百度链接提交主动推送后不收录的原因">
+<meta name="twitter:description" content="前言 （转载）自从百度站长平台开放了百度链接主动推送接口以后，很多站长都开始使用百度开放的这个主动推送接口来推送网站的最新内容，但是在使用这个推送接口的时候，大家肯定也发现了不少问题，比如推送的内容不收录、推送的链接数量 和 站长平台显示的主动提交数量不符等等">
+
+    
+    <link rel="alternative" href="/atom.xml" title="嘟嘟独立博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/dudu.gif" alt="嘟嘟独立博客" title="嘟嘟独立博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="嘟嘟独立博客">嘟嘟独立博客</a></h1>
+				<h2 class="blog-motto">爱生活爱编码</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/timeline">时光机</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" class="st-default-search-input" maxlength="20" placeholder="Search" />
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/03/14/baidunoshouluresson/" title="百度链接提交主动推送后不收录的原因" itemprop="url">百度链接提交主动推送后不收录的原因</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Teng Jun" target="_blank" itemprop="author">Teng Jun</a>
+		
+  <p class="article-time">
+    <time datetime="2016-03-14T14:54:24.000Z" itemprop="datePublished"> 发表于 2016-03-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言-（转载）"><span class="toc-number">1.</span> <span class="toc-text">前言 （转载）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主动推送不一定百分百收录"><span class="toc-number">1.1.</span> <span class="toc-text">主动推送不一定百分百收录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主动推送并非立马出现在搜索结果快照中"><span class="toc-number">1.2.</span> <span class="toc-text">主动推送并非立马出现在搜索结果快照中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#站长平台显示的主动提交数量和推送数量不符"><span class="toc-number">1.3.</span> <span class="toc-text">站长平台显示的主动提交数量和推送数量不符</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="前言-（转载）"><a href="#前言-（转载）" class="headerlink" title="前言 （转载）"></a>前言 （转载）</h1><p>自从百度站长平台开放了百度链接主动推送接口以后，很多站长都开始使用百度开放的这个主动推送接口来推送网站的最新内容，但是在使用这个推送接口的时候，大家肯定也发现了不少问题，比如推送的内容不收录、推送的链接数量 和 站长平台显示的主动提交数量不符等等<a id="more"></a> ，今天小编就针对这些问题给大家做一个详细的说明。</p>
+<h2 id="主动推送不一定百分百收录"><a href="#主动推送不一定百分百收录" class="headerlink" title="主动推送不一定百分百收录"></a>主动推送不一定百分百收录</h2><p>虽然说百度链接主动推送在收录速度上要优先于sitemap 和 网页提交，但是提交的内容是否收录还要取决你内容本身，如果你提交的网页内容质量较低，属于采集内容或者违规内容，那么这样的内容及时你使用主动推送提交也不一定能够百分百收录。</p>
+<p>百度的主动推送只是给站长们提供一个能够更快让百度发现网页链接的接口，但是内容是否会被收录依然要经过百度数据库的对比检测以后，符合收录标准的内容才会被收录。</p>
+<h2 id="主动推送并非立马出现在搜索结果快照中"><a href="#主动推送并非立马出现在搜索结果快照中" class="headerlink" title="主动推送并非立马出现在搜索结果快照中"></a>主动推送并非立马出现在搜索结果快照中</h2><p>很多站长朋友们使用的百度的主动推送接口以后，都错误的以为通过百度主动推送接口推送的内容都可以在第一时间内显示在百度搜索结果的快照中，其实这是错误的理解，因为你推送的内容仅仅是进入了百度搜索的数据库中，是否会在搜索结果快照中显示还需要百度爬虫的进一步检测和处理，一般收录以后的内容1-5天才会出现在快照中。当然，如果你的网站质量较高，或者你的网站属于新闻源类型的网站，一般主动推送以后的内容确实是立刻就能出现在搜索引擎结果中的。</p>
+<p>但是对于大部分的企业网站或者个人网站来说，主动推送的内容也不是立马在快照中显示的，所以大家在主动推送以后不要急着去查询快照结果，很多人查询不到快照结果就会不断重新提交相同的页面，这样对于网站的排名其实是非常不好的，因为百度的主动推送是为了让大家推送最新产生的网页，而不是不断提交相同的旧网页，如果重复提交之前提交过的网页，有可能会被搜索引擎错误的认为是作弊行为，可能会给网站带来更多的负面作用。</p>
+<h2 id="站长平台显示的主动提交数量和推送数量不符"><a href="#站长平台显示的主动提交数量和推送数量不符" class="headerlink" title="站长平台显示的主动提交数量和推送数量不符"></a>站长平台显示的主动提交数量和推送数量不符</h2><p>这个问题相信也有一些站长已经发现了，比如我们5月30号使用百度主动推送接口推送了2000条内容，但是等到过几天，去百度站长平台的后天查看时，发现百度站长平台显示的主动提交数量可能就是几条或者几十条，并非2000条内容，遇到这样的情况以后，很多站长都会感觉可能是百度主动推送接口出问题了。</p>
+<p>其实并非如此，如果你推送的2000条内容全部为最新产生的链接，那么百度站长平台看到的提交数量就是2000条，如果你主动推送的2000条内容中有很多都是之前已经被百度收录的内容，那么百度站长平台显示的主动提交数量就是你推送的总数量减去百度之前收录的网页数量的一个结果。</p>
+<p>也就是说百度站长平台显示的主动提交数量统计的是网站最新产生并且提交到百度的数量，并非你推送的真实数量，从这一点我们也不难看出，百度主动推送存在的目的就是让站长们推送最新产生的链接，而不是推送之前已经收录的内容。</p>
+<p>以上这三个方面就是百度主动推送接口最近可能大家遇到的一些问题，如果大家在使用百度主动推送接口时还遇到过什么其他的奇怪问题，欢迎一起讨论，让我们共同学习，一起进步！</p>
+<hr>
+<p>最近撸了个java的公众号，学习资源超级多，视频，电子书，最新开发工具一个都不能少，已全部分享到百度云盘，求资源共享，打造一个学习方便，工作方便的java公众号，开源开源，有需求的可以关注~撒花<br><img src="http://7xqch5.com1.z0.glb.clouddn.com/javaLearn.PNG" alt=""></p>
+  
+	</div>
+		
+	<!-- css -->
+	<style type="text/css">
+	    .center {
+	        text-align: center;
+	    }
+	    .hidden {
+	        display: none;
+	    }
+		.donate_bar a.btn_donate{
+			display: inline-block;
+			width: 82px;
+			height: 82px;
+			background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
+			_background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
+			<!-- http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
+			     ��Ϊ�� hexo ���ɵĲ������õ� theme �� a:hover ������Ч����
+				 Ϊ�����ô��Ͱ�ť��ʾЧ������ �� ���������¼��� css��
+				 Ƕ����������ʱ��һ��Ҫ���ǡ� -->
+			-webkit-transition: background 0s;
+			-moz-transition: background 0s;
+			-o-transition: background 0s;
+			-ms-transition: background 0s;
+			transition: background 0s;
+			<!-- /�ô��Ͱ�ť��Ч����ʾ���� �� ���ӵļ��� css ���˽��� -->
+		}
+		.donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
+		.donate_bar .donate_txt {
+			display: block;
+			color: #9d9d9d;
+			font: 14px/2 "Microsoft Yahei";
+		}
+		.bold{ font-weight: bold; }
+	</style>
+	<!-- /css -->
+    <!-- Donate Module -->
+    <div id="donate_module">
+	<!-- btn_donate & tips -->
+	<div id="donate_board" class="donate_bar center">
+	    <br>
+	   
+		<a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate ����"></a>
+		<span class="donate_txt">
+			随手扫一扫，我会开心一整天~
+		</span>
+			
+		
+	</div>
+	<!-- /btn_donate & tips -->
+	<!-- donate guide -->
+    
+	<div id="donate_guide" class="donate_bar center hidden">
+        <br>
+	    
+	    <div width="100%" align="center"><div name="dashmain" id="dash-main-id-879089" class="dash-main-3 879089-1"></div></div>
+		<script type="text/javascript" charset="utf-8" src="https://www.dashangcloud.com/static/ds-2.0.js"></script>
+		
+		<a href="http://7xqch5.com1.z0.glb.clouddn.com/wexin_1.jpg" class="fancybox" rel="article0">
+			<img src="http://7xqch5.com1.z0.glb.clouddn.com/wexin_1.jpg"  height="190px" width="auto"/>
+		</a>
+        
+        &nbsp;&nbsp;
+		<a href="http://7xqch5.com1.z0.glb.clouddn.com/zhifubao-1.png" class="fancybox" rel="article0">
+			<img src="http://7xqch5.com1.z0.glb.clouddn.com/zhifubao-1.png" height="190px" width="auto"/>
+		</a>
+		<span class="donate_txt">
+			随手扫一扫，我会开心一整天~
+		</span>
+	</div>
+	<!-- /donate guide -->
+	<!-- donate script -->
+	<script type="text/javascript">
+		document.getElementById('btn_donate').onclick = function() {
+			$('#donate_board').addClass('hidden');
+	    $('#donate_guide').removeClass('hidden');
+		}
+		function donate_on_web(){
+			$('#donate').submit();
+        }
+		var original_window_onload = window.onload;
+        window.onload = function () {
+            if (original_window_onload) {
+                original_window_onload();
+            }
+            document.getElementById('donate_board_wdg').className = 'hidden';
+		}
+	</script>
+	<!-- /donate script -->
+</div>
+<!-- /Donate Module -->
+   
+
+
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/SEO/">SEO</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/SEO/">SEO</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://tengj.github.io/2016/03/14/baidunoshouluresson/" data-title="百度链接提交主动推送后不收录的原因 | 嘟嘟独立博客" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/03/17/hexo7count/" title="hexo干货系列：（七）hexo安装统计插件">
+  <strong>上一篇：</strong><br/>
+  <span>
+  hexo干货系列：（七）hexo安装统计插件</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/03/14/hexo6seo/"  title="hexo干货系列：（六）hexo提交搜索引擎（百度+谷歌）">
+ <strong>下一篇：</strong><br/> 
+ <span>hexo干货系列：（六）hexo提交搜索引擎（百度+谷歌）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/03/14/baidunoshouluresson/" data-title="百度链接提交主动推送后不收录的原因" data-url="http://tengj.github.io/2016/03/14/baidunoshouluresson/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言-（转载）"><span class="toc-number">1.</span> <span class="toc-text">前言 （转载）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主动推送不一定百分百收录"><span class="toc-number">1.1.</span> <span class="toc-text">主动推送不一定百分百收录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主动推送并非立马出现在搜索结果快照中"><span class="toc-number">1.2.</span> <span class="toc-text">主动推送并非立马出现在搜索结果快照中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#站长平台显示的主动提交数量和推送数量不符"><span class="toc-number">1.3.</span> <span class="toc-text">站长平台显示的主动提交数量和推送数量不符</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="tengj" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/IDEA大汇总/" title="IDEA大汇总">IDEA大汇总<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java基础与提高干货系列/" title="Java基础与提高干货系列">Java基础与提高干货系列<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java多线程/" title="Java多线程">Java多线程<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java集合干货系列/" title="Java集合干货系列">Java集合干货系列<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/SEO/" title="SEO">SEO<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Spring-Boot/" title="Spring Boot">Spring Boot<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/app推荐/" title="app推荐">app推荐<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/git/" title="git">git<sup>7</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>9</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/springMVC/" title="springMVC">springMVC<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微课系列/" title="微课系列">微课系列<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/设计模式/" title="设计模式">设计模式<sup>8</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/IDEA/" style="font-size: 10px;">IDEA</a> <a href="/tags/SEO/" style="font-size: 13.33px;">SEO</a> <a href="/tags/Spring-Boot/" style="font-size: 16.67px;">Spring Boot</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://shomy.top" target="_blank" title="天空的城">天空的城</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://iamaboy.xyz" target="_blank" title="WenQiang&#39;s Notes">WenQiang&#39;s Notes</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.cocosdever.com" target="_blank" title="C的博客">C的博客</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> 程序员上辈子都是折翼的天使 <br/>
+			This is my blog,Try to do better.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/tengj" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Teng Jun">Teng Jun</a>
+		
+		</p>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','Ts_hz24x26ZaNWfhsYwW','2.0.0');
+</script>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  
+  var m = $('#main'),
+      a = $('#asidepart'), //侧边栏
+      c = $('.closeaside'),//隐藏侧边栏
+      o = $('.openaside'); //显示侧边栏
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    $('#toc.toc-aside').css('display', 'block').addClass('fadeIn'); //这个是我新加的，修改点
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+
+  var bp = document.createElement('script');
+  bp.src = '//push.zhanzhang.baidu.com/push.js';
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"tengj"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257841330'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257841330%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

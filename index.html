@@ -1,187 +1,597 @@
-<!DOCTYPE html>
-<html>
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hello,every body!~">
+    <title>嘟嘟独立博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Teng Jun">
+    
+
+    
+    <meta name="description" content="hello,every body!~">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://qq56956808.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="嘟嘟独立博客">
+<meta property="og:url" content="http://tengj.github.io/index.html">
+<meta property="og:site_name" content="嘟嘟独立博客">
 <meta property="og:description" content="hello,every body!~">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="嘟嘟独立博客">
 <meta name="twitter:description" content="hello,every body!~">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
 
+    
+    <link rel="alternative" href="/atom.xml" title="嘟嘟独立博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <body>
+    <header>
       
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Hexo</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qq56956808.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/dudu.gif" alt="嘟嘟独立博客" title="嘟嘟独立博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="嘟嘟独立博客">嘟嘟独立博客</a></h1>
+				<h2 class="blog-motto">爱生活爱编码</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/timeline">时光机</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" class="st-default-search-input" maxlength="20" placeholder="Search" />
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/07/hello-world/" class="article-date">
-  <time datetime="2017-03-07T15:05:04.180Z" itemprop="datePublished">2017-03-07</time>
-</a>
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/02/28/springboot2/" title="Spring Boot干货系列：（二）配置文件解析" itemprop="url">
+  
+    <h1 itemprop="name">Spring Boot干货系列：（二）配置文件解析</h1>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+     
+           <p itemprop="description" >前言上一篇介绍了Spring Boot的入门，知道了Spring Boot使用“习惯优于配置”（项目中存在大量的配置，此外还内置了一个习惯性的配置，让你无需手动进行配置）的理念让你的项目快速运行起来。所以，我们要想把Spring Boot玩的溜，就要懂得如何开启各个功能模块的默认</p>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://qq56956808.github.io/2017/03/07/hello-world/" data-id="cizzp0x5n0000doduofastzn6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <time datetime="2017-02-28T13:14:01.000Z" itemprop="datePublished">2017-02-28</time>
+  </a>
 </section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/02/28/springbootconfig/" title="Spring Boot干货系列：常用属性汇总" itemprop="url">
+  
+    <h1 itemprop="name">Spring Boot干货系列：常用属性汇总</h1>
+    
+     
+           <p itemprop="description" >附录A.常用应用程序属性
+摘自：http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+可以在application.properties/</p>
         
-          <aside id="sidebar">
-  
     
+    <time datetime="2017-02-28T08:15:44.000Z" itemprop="datePublished">2017-02-28</time>
+  </a>
+</section>
+
+
+
+
+
 
   
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/02/26/springboot1/" title="Spring Boot干货系列：（一）优雅的入门篇" itemprop="url">
+  
+    <h1 itemprop="name">Spring Boot干货系列：（一）优雅的入门篇</h1>
     
+     
+           <p itemprop="description" >前言Spring一直是很火的一个开源框架，在过去的一段时间里，Spring Boot在社区中热度一直很高，所以决定花时间来了解和学习，为自己做技术储备。
+正文首先声明，Spring Boot不是一门新技术，所以不用紧张。从本质上来说，Spring Boot就是Spring,它做了</p>
+        
+    
+    <time datetime="2017-02-25T16:35:30.000Z" itemprop="datePublished">2017-02-26</time>
+  </a>
+</section>
+
+
+
+
+
 
   
-    
+<section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2017/02/22/idea1-1/" title="Java人员正确使用 IntelliJ IDEA的方式" itemprop="url">
+  
+    <h1 itemprop="name">Java人员正确使用 IntelliJ IDEA的方式</h1>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li></ul>
-    </div>
+     
+           <p itemprop="description" >前言博主是Java开发人员，以前一直都用myeclipse来开发的，说实话感觉myeclipse毫无美感可言，后来经过同事介绍，认识了IDEA，一眼就相中了IDEA黑色的主题风格，自此就抛弃了旧爱myeclipse。当时还不懂IDEA功能上比myeclipse好在哪里，只是单纯的</p>
+        
+    
+    <time datetime="2017-02-21T22:40:11.000Z" itemprop="datePublished">2017-02-22</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/24/wk01/" title="如何制作微课系列——（第一天）微课选题怎么玩？" itemprop="url">
+  
+    <h1 itemprop="name">如何制作微课系列——（第一天）微课选题怎么玩？</h1>
+    
+     
+           <p itemprop="description" >首页今天第一次接触微课，还是蛮新鲜的，非常感谢公司举办的这个活动，自己也有幸参与进来。今天是第一天，王发松老师给我们带来的精彩课程——《微课选题怎么玩》。下面是个人整理的课后笔记，希望对您有用。
+正文一个好的微课选题要怎么包装，老师介绍需要以下3个步骤
+
+常见误区
+选题方法
+让课</p>
+        
+    
+    <time datetime="2016-05-24T08:20:48.000Z" itemprop="datePublished">2016-05-24</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/12/springmvc4aop/" title="SpringMVC干货系列：从零搭建SpringMVC+mybatis（四）：Spring两大核心之AOP学习" itemprop="url">
+  
+    <h1 itemprop="name">SpringMVC干货系列：从零搭建SpringMVC+mybatis（四）：Spring两大核心之AOP学习</h1>
+    
+     
+           <p itemprop="description" >前言上一篇我们介绍了Spring的核心概念DI,DI有助与应用对象之间的解耦。今天我们就来介绍下另一个非常核心的概念，面向切面编程AOP。
+正文在软件开发中，散布于应用中多处的功能被称为横切关注点（cross-cutting concern）。通常来讲，这些横切关注点从概念上是与</p>
+        
+    
+    <time datetime="2016-05-12T02:01:56.000Z" itemprop="datePublished">2016-05-12</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/06/threadvolatile4/" title="Java多线程干货系列—（四）volatile关键字" itemprop="url">
+  
+    <h1 itemprop="name">Java多线程干货系列—（四）volatile关键字</h1>
+    
+     
+           <p itemprop="description" >前言今天介绍下volatile关键字，volatile这个关键字可能很多朋友都听说过，或许也都用过。在Java 5之前，它是一个备受争议的关键字，因为在程序中使用它往往会导致出人意料的结果。在Java 5之后，volatile关键字才得以重获生机。
+正文volatile关键字虽然</p>
+        
+    
+    <time datetime="2016-05-06T14:56:00.000Z" itemprop="datePublished">2016-05-06</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/03/threadsynchronized2/" title="Java多线程干货系列—（二）synchronized" itemprop="url">
+  
+    <h1 itemprop="name">Java多线程干货系列—（二）synchronized</h1>
+    
+     
+           <p itemprop="description" >前言本篇主要介绍Java多线程中的同步，也就是如何在Java语言中写出线程安全的程序，如何在Java语言中解决非线程安全的相关问题。没错就是使用synchronized。
+正文如何解决线程安全问题？那么一般来说，是如何解决线程安全问题的呢？
+基本上所有的并发模式在解决线程安全问题</p>
+        
+    
+    <time datetime="2016-05-02T22:59:54.000Z" itemprop="datePublished">2016-05-03</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/02/springmvctotal/" title="springMVC干货系列：从零搭建springMVC+mybatis（总纲）" itemprop="url">
+  
+    <h1 itemprop="name">springMVC干货系列：从零搭建springMVC+mybatis（总纲）</h1>
+    
+     
+           <p itemprop="description" >首页最近一段时间有个公司项目需求调研后，项目组决定使用springMVC+mybatis3+bootstrap来实现。于是总结一下最近使用的心得，以及开发过程中遇到的问题。
+正文SpringMVC是Java开发人员必须要掌握的一个框架，掌握它能令你工作上如鱼得水。本系列会从零开始</p>
+        
+    
+    <time datetime="2016-05-02T10:31:57.000Z" itemprop="datePublished">2016-05-02</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/05/02/springmvc3iocdi/" title="springMVC干货系列：从零搭建springMVC+mybatis（三）：spring两大核心之IOC/DI学习" itemprop="url">
+  
+    <h1 itemprop="name">springMVC干货系列：从零搭建springMVC+mybatis（三）：spring两大核心之IOC/DI学习</h1>
+    
+     
+           <p itemprop="description" >前言上篇讲了SpringMVC的实现原理以及常用的注解，其实里面都用到的spring的核心概念，那就是IOC/DI，今天给大家介绍下这核心概念IOC/DI。
+正文分享Iteye的开涛这位技术牛人对Spring框架的IOC的理解,写得非常通俗易懂。
+IoC是什么Ioc—Invers</p>
+        
+    
+    <time datetime="2016-05-02T10:21:16.000Z" itemprop="datePublished">2016-05-02</time>
+  </a>
+</section>
+
+
+
+
+
+
+
+  <nav id="page-nav" class="clearfix unexpand">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
+  </nav>
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="tengj" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/IDEA大汇总/" title="IDEA大汇总">IDEA大汇总<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java基础与提高干货系列/" title="Java基础与提高干货系列">Java基础与提高干货系列<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java多线程/" title="Java多线程">Java多线程<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Java集合干货系列/" title="Java集合干货系列">Java集合干货系列<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/SEO/" title="SEO">SEO<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Spring-Boot/" title="Spring Boot">Spring Boot<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/app推荐/" title="app推荐">app推荐<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/git/" title="git">git<sup>7</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>9</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/springMVC/" title="springMVC">springMVC<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微课系列/" title="微课系列">微课系列<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/设计模式/" title="设计模式">设计模式<sup>8</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li></ul>
   </div>
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/IDEA/" style="font-size: 10px;">IDEA</a> <a href="/tags/SEO/" style="font-size: 13.33px;">SEO</a> <a href="/tags/Spring-Boot/" style="font-size: 16.67px;">Spring Boot</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
         
           <li>
-            <a href="/2017/03/07/hello-world/">Hello World</a>
+            
+            	<a href="http://shomy.top" target="_blank" title="天空的城">天空的城</a>
+            
           </li>
         
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
+          <li>
+            
+            	<a href="http://iamaboy.xyz" target="_blank" title="WenQiang&#39;s Notes">WenQiang&#39;s Notes</a>
+            
+          </li>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 Liu Minxinag<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+          <li>
+            
+            	<a href="http://blog.cocosdever.com" target="_blank" title="C的博客">C的博客</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
     </div>
-  </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> 程序员上辈子都是折翼的天使 <br/>
+			This is my blog,Try to do better.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/tengj" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Teng Jun">Teng Jun</a>
+		
+		</p>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','Ts_hz24x26ZaNWfhsYwW','2.0.0');
+</script>
+</div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
   
-    <a href="/" class="mobile-nav-link">Home</a>
+  var m = $('#main'),
+      a = $('#asidepart'), //侧边栏
+      c = $('.closeaside'),//隐藏侧边栏
+      o = $('.openaside'); //显示侧边栏
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    $('#toc.toc-aside').css('display', 'block').addClass('fadeIn'); //这个是我新加的，修改点
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  var bp = document.createElement('script');
+  bp.src = '//push.zhanzhang.baidu.com/push.js';
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+});
+</script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
 
-  </div>
-</body>
-</html>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257841330'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257841330%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>
