@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>亿领明星的博客</title>
-  <subtitle>elstar.top</subtitle>
+  <title>亿领明星个人博客</title>
+  <subtitle>爱生活，爱Java！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://stargg.github.io/"/>
@@ -9,7 +9,7 @@
   <id>http://stargg.github.io/</id>
   
   <author>
-    <name>Liu Star</name>
+    <name>Star Liu</name>
     
   </author>
   
