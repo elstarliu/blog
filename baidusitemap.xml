@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://elstar.top/2017/04/08/My-New-Post/</loc>
+    <lastmod>2017-03-09T16:04:08.874Z</lastmod>
+    <data>
+        <display>
+        <title>My New Post</title>
+        <pubTime>2017-04-08T14:34:25.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://elstar.top/2017/03/07/hello-world/</loc>
+    <lastmod>2017-03-07T15:05:04.180Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-03-07T15:05:04.180Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
