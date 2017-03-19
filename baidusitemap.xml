@@ -3,34 +3,24 @@
 
 
     
-    
   <url>
-    <loc>http://stargg.github.io/2017/04/08/My-New-Post/</loc>
-    <lastmod>2017-03-09T16:04:08.874Z</lastmod>
+    <loc>http://stargg.github.io/2017/03/19/%E7%88%B1%E4%B8%8A%E5%86%99%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2017-03-19T02:57:32.458Z</lastmod>
     <data>
         <display>
-        <title>My New Post</title>
-        <pubTime>2017-04-08T14:34:25.000Z</pubTime>
+        <title>爱上写博客</title>
+        <pubTime>2017-03-19T02:44:02.000Z</pubTime>
         
+        <tag>爱生活</tag>
+         
          
            
+             
+              <breadCrumb title="爱生活" url="http://stargg.github.io/categories/%E7%88%B1%E7%94%9F%E6%B4%BB/"/>
+          
         </display>
     </data>
     </url>
 
     
-  <url>
-    <loc>http://stargg.github.io/2017/03/07/hello-world/</loc>
-    <lastmod>2017-03-07T15:05:04.180Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-03-07T15:05:04.180Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>

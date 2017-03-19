@@ -3,16 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[My New Post]]></title>
-      <url>%2F2017%2F04%2F08%2FMy-New-Post%2F</url>
-      <content type="text"></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>%2F2017%2F03%2F07%2Fhello-world%2F</url>
-      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <title><![CDATA[爱上写博客]]></title>
+      <url>%2F2017%2F03%2F19%2F%E7%88%B1%E4%B8%8A%E5%86%99%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[2017.03.19 10:40更新 爱上写博客 现在的我们更多的技术是直接来源于Google、百度、CSDN或者其他，搜索得来的，我们并不去考虑别人在其中花费的时间和经历，有时候我们要试着去想我们是不是也应该分享给别人只有分享才会使未来更美好。 不知不觉，入行已经一年了，当初从一个什么都不会的0基础小白，变成了一个会一些又不是很精通的大白(●—●)。个人认为，写博客是非常有必要的： 1.能够强化经验和知识点2.当作一个可以索引的记忆宝库3.提升学习能力，锻炼逻辑思维4.锻炼文字的表达能力5.学会持之以恒地做一件事情6.能够交到很多志同道合的朋友7.一个长期的价值博客是一份很好的简历 写博客，言简意赅是我的风格，没有过多的长(dou)篇(shi)大(fei)论(hua)，能够表达我思我想，才是我真正的目的。可以把多出来的时间，好好享受当下的生活。 屌丝程序员的逆袭，一般分两步: 让自己变得牛逼, 让别人知道你牛逼。]]></content>
     </entry>
 
     
